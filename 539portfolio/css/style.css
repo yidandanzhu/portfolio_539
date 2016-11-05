@@ -25,9 +25,11 @@ h1 img{
   position:relative;;
   height: 100%;
   display: block;
-  border-top: 2px solid #0f434f;
+  border-top: 1px solid grey;
 }
-
+.menu{
+  display: none;
+}
 nav{
     width: 20%;
     height:100%;
@@ -255,10 +257,146 @@ footer p{
 }
 
 
+/*tablet view*/
+@media screen and (max-width: 1000px) {
+body{
+  margin-top: 40px;
+}
+header img{
+  display: none;
+}
+header h1{
+  padding-top: 150px;
+  font-size: 50px;
+}
+nav{
+   width:100%;
+   height:42px;
+   box-shadow: 0px 1px 50px #5E5E5E;
+   position:fixed;
+   top:0px;
+   z-index: 100;
+   background-color: #f1f1f1;
+  }
+ul li{
+    display: inline-block;
+  }
+.container{
+  width: 100%;
+  left: 0;
+}
+.photos .imgs {
+    margin-top: 10%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.photos .imgs img {
+    width: 70%;
+    height: 50%;
+    display: inline-block;
+    float: left;
 
-@media screen and (min-width: 800px){
+}
+
+.text{
+  display: inline-block;
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 130px;
+
+}
 
 
+}
 
-  
+
+/*mobile view*/
+@media screen and (max-width: 700px) {
+  body{
+    margin-top: 0px;
+  }
+  header h1{
+    font-size: 30px;
+
+  }
+.menu{
+  display: block;
+  font-size: 20px;
+  font-family:fantasy;
+  margin-top: 5px;
+  text-align: center;
+  color:white;
+}
+nav{
+  top:20px;
+  left:20px;
+  display: inline;
+  width:20%;
+  height:auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+nav ul{
+  display: none;
+  float: left;
+}
+nav:hover{
+  width: auto;
+  height: auto;
+}
+nav:hover ul{
+  display: block;}
+ul {
+  display: none;
+}
+ul li{
+
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+}
+ul li a {
+  color:white;
+  display:block;
+}
+ul li:hover {background: #666;
+}
+
+
+.container{
+  width: 100%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.photos{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.photos .imgs{
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+}
+.photos .imgs img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    display: inline-block;
+    float: left;
+
+}
+
+.text{
+  width: 96%;
+  margin: 0;
+  padding: 0;
+  height: 130px;
+  padding: 2%;
+
+}
 }
