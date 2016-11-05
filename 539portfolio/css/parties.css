@@ -1,0 +1,13 @@
+#titleimg{
+  background:url(../img/travelgroup.jpg) no-repeat center;
+}
+
+
+.photos .imgs {
+    margin-left: 1%;
+    margin-right:2%;
+    float: left;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    margin-top: 5%;
+}
