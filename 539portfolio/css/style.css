@@ -87,31 +87,6 @@ li a:hover:not(.active) {
 
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-/* Position the "next button" to the right */
-.next {
-  right: 10%;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
 
 /* The dots/bullets/indicators */
 .dot {
@@ -209,9 +184,7 @@ li a:hover:not(.active) {
   from {opacity: 0.4}
   to {opacity: 1}
 }
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+
 footer{
   width: 100%;
   position: sticky;
@@ -229,15 +202,15 @@ footer img{
 
 }
 #footlist1{
-  margin-left: 15%;
-  margin-top: 20px;
+  margin-left: 12%;
+  margin-top: 2%;
   float:left;
   width: 30%
 
 }
 #footlist2{
   margin-left: 5%;
-  margin-top: 20px;
+  margin-top: 2%;
   float:left;
   width: 30%;
 }
@@ -245,14 +218,15 @@ footer h3{
   font-size: 20px;
   color:#0f434f;
   margin-bottom: 10px;
+
 }
 footer p{
   line-height: 120%;
 }
 #footlist2 img{
-  width: 35px;
+  width: 17%;
   height: auto;
-  margin-left: 1%;
+  margin-right: 5%;
 
 }
 
@@ -280,6 +254,7 @@ nav{
   }
 ul li{
     display: inline-block;
+    float: left;
   }
 .container{
   width: 100%;
@@ -306,7 +281,15 @@ ul li{
   height: 130px;
 
 }
-
+footer{
+  height: 175px;
+}
+#wolffoot{
+  display: none;
+}
+#footlist2{
+  margin-left: 10%;
+}
 
 }
 
@@ -399,4 +382,21 @@ ul li:hover {background: #666;
   padding: 2%;
 
 }
+footer{
+  height: 250px;
+  overflow: hidden;
+}
+#footlist1{
+  width: 90%;
+  margin: 5% 5% 0 5%;
+}
+#footlist2{
+  width: 90%;
+  margin: 2% 5%;
+}
+#footlist2 img{
+  width: 30px;
+  margin: 1%;
+}
+
 }

@@ -27,13 +27,13 @@
 			<a class="menu">MENU</a>
 			<ul class = "navig">
 				<li>
-					<a class = "active" href=""><h2>Home</h2></a>
+					<a class = "active" href="home.html"><h2>Home</h2></a>
 				</li>
 				<li>
-						<a href=""><h2>Travel Guide</h2></a>
+						<a href="guide.html"><h2>Travel Guide</h2></a>
 				</li>
 				<li>
-						<a href=""><h2>Tour Parties</h2></a>
+						<a href="parties.html"><h2>Tour Parties</h2></a>
 						</li>
 				<li>
 						<a href=""><h2>Contact Us</h2></a>
@@ -64,8 +64,6 @@
 			<h3>Hiking is fun!<h3>
 	</div>
 
-	<a class="prev" onclick="plusSlides(-1)">❮</a>
-	<a class="next" onclick="plusSlides(1)">❯</a>
 
 	<div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
@@ -125,7 +123,7 @@
 
 
 <footer>
-	<img src="img/wolf2.png">
+	<img id = "wolffoot" src="img/wolf2.png">
 	<div id = "footlist1">
 		<h3>Contact Information</h3>
 		<p>
@@ -138,10 +136,10 @@
 	</div>
 	<div id = "footlist2">
 		<h3>Keep Connected</h3>
-		<img src="img/facebook.png">
-		<img src="img/twitter.png">
-		<img src="img/google.png">
-		<img src="img/instagram.png">
+		<a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
+		<a href="http://www.twitter.com" target="_blank"><img src="img/twitter.png"></a>
+		<a href="http://www.google.com" target="_blank"><img src="img/google.png"></a>
+		<a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
 	</div>
 
 
@@ -151,10 +149,6 @@
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
