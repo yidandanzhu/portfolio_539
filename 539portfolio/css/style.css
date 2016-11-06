@@ -142,22 +142,13 @@ li a:hover:not(.active) {
     width: 30%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
-
-.photos .imgs:hover{
-
-}
-
 .photos .imgs img {
     width: 100%;
     height: 100%;
-
 }
-
-
 .text{
-  padding: 10px;
   height: 130px;
-
+  padding: 10px 20px 20px 20px;
 }
 
 .text h3{
@@ -314,7 +305,6 @@ footer{
 nav{
   top:20px;
   left:20px;
-  display: inline;
   width:20%;
   height:auto;
   background-color: rgba(0, 0, 0, 0.5);
@@ -329,21 +319,25 @@ nav:hover{
   height: auto;
 }
 nav:hover ul{
-  display: block;}
-ul {
-  display: none;
+  display: block;
 }
 ul li{
-
   background-color: rgba(0, 0, 0, 0.5);
   display: block;
+  float:none;
+  text-align: center;
 }
 ul li a {
   color:white;
-  display:block;
+
 }
-ul li:hover {background: #666;
+ul li:hover {
+  background: #666;
 }
+
+
+
+
 
 
 .container{
@@ -351,37 +345,40 @@ ul li:hover {background: #666;
   left: 0;
   margin: 0;
   padding: 0;
+
 }
 .photos{
   width: 100%;
   margin: 0;
   padding: 0;
-}
-.photos .imgs{
 
-    width: 100%;
-    margin: 0;
-    padding: 0;
+}
+.photos .imgs {
+    margin:0;
+    float: left;
     box-shadow: none;
 }
 .photos .imgs img {
     width: 100%;
-    margin: 0;
+    margin:0;
     padding: 0;
     height: 50%;
     display: inline-block;
     float: left;
 
 }
-
 .text{
   width: 96%;
   margin: 0;
   padding: 0;
-  height: 130px;
+  height: 100px;
   padding: 2%;
-
 }
+
+
+
+
+
 footer{
   height: 250px;
   overflow: hidden;
