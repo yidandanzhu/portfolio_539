@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
 	<meta charset="UTF-8">
@@ -13,7 +13,7 @@
 	<header>
 		<div id = "titleimg">
 		<h1>
-			<img src = "img/wolf2.png">
+			<img alt = "wolf" src = "img/wolf2.png">
 			Welcome to Wolverine Travel
 
 		</h1>
@@ -23,6 +23,9 @@
 
 
 <div class = "main">
+
+
+
 	<nav>
 			<a class="menu">MENU</a>
 			<ul class = "navig">
@@ -36,10 +39,12 @@
 						<a href="parties.html"><h2>Tour Parties</h2></a>
 						</li>
 				<li>
-						<a href=""><h2>Contact Us</h2></a>
+						<a href="contact.html"><h2>Contact Us</h2></a>
 				</li>
 			</ul>
 	</nav>
+
+
 <div class = "container">
 
 <div class = "gallary">
@@ -47,30 +52,48 @@
 		Our Steps
 	</h2>
 	<div class = "slides fade">
-		<img src="img/lake.jpg">
-		<h3>Advanture in the fantastic lake in Orlando.<h3>
+		<img alt = "lake" src="img/lake.jpg">
+		<div class ="galltext">
+		<h3>Advanture in the Mystic lake in Orlando.</h3>
+		<p>At the end of the summer, we finally decided to explore the Lemon Lake area.
+			It was a decision to get up early in the morning. We find this mystic lake lying in the pride of the morning.
+		</p>
+		</div>
 	</div>
 	<div class = "slides fade">
-			<img src="img/walk.jpg">
-			<h3>Never stop your loyal steps.</h3>
+			<img alt = "walk" src="img/walk.jpg">
+			<div class ="galltext">
+			<h3>Life of exploring</h3>
+			<p>
+				Romanenko is one of few explorers to have visited Wrangel Island.
+				The inaccessible Arctic territory – belonging to Russia – was home to a population of dwarf woolly mammoths.
+			</p>
+			</div>
 	</div>
 
 	<div class = "slides fade">
-			<img src="img/island.jpg">
-			<h3>Amazon island: Good place for family trips.<h3>
+			<img alt = "island" src="img/island.jpg">
+			<div class ="galltext">
+			<h3>Apple island: Good place for family trips.</h3>
+			<p>
+				Windy Island Tour Party's Summer Tour Plan in Apple island for families.
+				Party leader Cathy Brown:"We are looking for 4-5 families to join us this summer.
+				The trip will last 15-20 days."
+			</p>
+			</div>
 	</div>
 	<div class = "slides fade">
-			<img src="img/group.jpg">
-			<h3>Hiking is fun!<h3>
+			<img alt = "group" src="img/group.jpg">
+			<div class ="galltext">
+			<h3>Expedition</h3>
+			<p>
+				"Expedition" tour party recently explored the Devil's Throat Cave,one of the deepest cave in the world.
+				Party leader Emma Jones said:"After three long and painful nights in the cave, we understood more than the meaning of our life."
+			</p>
+			</div>
 	</div>
 
 
-	<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-	<span class="dot" onclick="currentSlide(4)"></span>
-</div>
 
 </div>
 
@@ -85,7 +108,7 @@
 
 	<div class="imgs">
 	  <a>
-	    <img src="img/forest.jpg">
+	    <img alt = "forest" src="img/forest.jpg">
 	  </a>
 		<div class = "text">
 		<h3>Squirrel Forest</h3>
@@ -95,7 +118,7 @@
 
 	<div class="imgs">
 		<a>
-			<img src="img/snow.jpg">
+			<img alt = "snow" src="img/snow.jpg">
 		</a>
 		<div class = "text">
 		<h3>Ice Advanture</h3>
@@ -106,7 +129,7 @@
 
 	<div class="imgs">
 		<a>
-			<img src="img/city.jpg">
+			<img alt = "city" src="img/city.jpg">
 		</a>
 			<div class = "text">
 		<h3>New York</h3>
@@ -123,7 +146,7 @@
 
 
 <footer>
-	<img id = "wolffoot" src="img/wolf2.png">
+	<img alt = "wolf" id = "wolffoot" src="img/wolf2.png">
 	<div id = "footlist1">
 		<h3>Contact Information</h3>
 		<p>
@@ -132,14 +155,14 @@
 		</p>
 		<p>(734)764-1817</p>
 		<p>12345@umich.edu</p>
-		</ul>
+	
 	</div>
 	<div id = "footlist2">
 		<h3>Keep Connected</h3>
-		<a href="http://www.facebook.com" target="_blank"><img src="img/facebook.png"></a>
-		<a href="http://www.twitter.com" target="_blank"><img src="img/twitter.png"></a>
-		<a href="http://www.google.com" target="_blank"><img src="img/google.png"></a>
-		<a href="http://www.instagram.com" target="_blank"><img src="img/instagram.png"></a>
+		<a href="http://www.facebook.com" target="_blank"><img alt = "facebook" src="img/facebook.png"></a>
+		<a href="http://www.twitter.com" target="_blank"><img alt = "twitter" src="img/twitter.png"></a>
+		<a href="http://www.google.com" target="_blank"><img alt = "google" src="img/google.png"></a>
+		<a href="http://www.instagram.com" target="_blank"><img alt = "instagram" src="img/instagram.png"></a>
 	</div>
 
 
@@ -147,27 +170,19 @@
 
 
 <script>
-var slideIndex = 1;
-showSlides(slideIndex);
+var myIndex = 0;
+carousel();
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("slides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
 }
 </script>
 
